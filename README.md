@@ -16,7 +16,7 @@ make build
 sam local start-api
 ```
 
-### test diffrent api
+## Test diffrent functions/events
 
 ### hello-world-api-get
 
