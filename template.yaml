@@ -1,0 +1,34 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: >
+  Example how to use sam and go lambda functions
+# More info about Globals: https://github.com/dbgeek/ec2-start-stop/README.md
+Globals:
+  Function:
+    Timeout: 360
+
+Resources:
+  HelloWorldApiGet:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: hello-world-api-get/dist
+      Handler: hello-world-api-get
+      Runtime: go1.x
+      Events:
+        GetEvent:
+          Type: Api
+          Properties:
+            Path: /
+            Method: get
+  HelloWorldApiPost:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: hello-world-api-post/dist
+      Handler: hello-world-api-post
+      Runtime: go1.x
+      Events:
+        GetEvent:
+          Type: Api
+          Properties:
+            Path: /
+            Method: post
