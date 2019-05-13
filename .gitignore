@@ -10,3 +10,6 @@
 
 # Output of the go coverage tool, specifically when used with LiteIDE
 *.out
+
+hello-world-api-get/dist
+hello-world-api-post/dist
