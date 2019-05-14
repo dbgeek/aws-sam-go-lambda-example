@@ -44,3 +44,15 @@ Resources:
           Properties:
             Path: /
             Method: delete
+  HelloWorldApiPut:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: hello-world-api-put/dist
+      Handler: hello-world-api-put
+      Runtime: go1.x
+      Events:
+        GetEvent:
+          Type: Api
+          Properties:
+            Path: /
+            Method: put

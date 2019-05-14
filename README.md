@@ -30,6 +30,12 @@ curl  http://localhost:3000
 curl -X POST -H "Content-Type:application/json" --data '{ "message": "world" }' http://localhost:3000
 ```
 
+### hello-world-api-put
+
+```sh
+curl -X PUT -H "Content-Type:application/json" --data '{ "message": "world" }' http://localhost:3000
+```
+
 ### hello-world-api-delete
 
 ```sh
