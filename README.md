@@ -29,3 +29,9 @@ curl  http://localhost:3000
 ```sh
 curl -X POST -H "Content-Type:application/json" --data '{ "message": "world" }' http://localhost:3000
 ```
+
+### hello-world-api-delete
+
+```sh
+curl -X DELETE http://127.0.0.1:3000
+```

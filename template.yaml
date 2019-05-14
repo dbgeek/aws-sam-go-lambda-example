@@ -32,3 +32,15 @@ Resources:
           Properties:
             Path: /
             Method: post
+  HelloWorldApiDelete:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: hello-world-api-delete/dist
+      Handler: hello-world-api-delete
+      Runtime: go1.x
+      Events:
+        GetEvent:
+          Type: Api
+          Properties:
+            Path: /
+            Method: delete
