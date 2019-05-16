@@ -32,6 +32,18 @@ Resources:
           Properties:
             Path: /query
             Method: get
+  HelloWorldApiGetPathParm:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: hello-world-api-get-path-param/dist
+      Handler: hello-world-api-get-path-param
+      Runtime: go1.x
+      Events:
+        GetEvent:
+          Type: Api
+          Properties:
+            Path: /path/{id}
+            Method: get
   HelloWorldApiPost:
     Type: AWS::Serverless::Function
     Properties:

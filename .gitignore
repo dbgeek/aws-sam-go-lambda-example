@@ -13,6 +13,7 @@
 
 hello-world-api-get/dist
 hello-world-api-get-query/dist
+hello-world-api-get-path-param/dist
 hello-world-api-post/dist
 hello-world-api-put/dist
 hello-world-api-delete/dist

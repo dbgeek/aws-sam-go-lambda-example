@@ -30,6 +30,12 @@ curl  http://localhost:3000
 curl -X GET -H 'content-type: application/json'   http://localhost:3000/query?name=foo
 ```
 
+### hello-world-api-get-path-param
+
+```sh
+curl -X GET -H 'content-type: application/json'   http://localhost:3000/path/foo
+```
+
 ### hello-world-api-post
 
 ```sh
