@@ -24,6 +24,12 @@ sam local start-api
 curl  http://localhost:3000
 ```
 
+### hello-world-api-get-query
+
+```sh
+curl -X GET -H 'content-type: application/json'   http://localhost:3000/query?name=foo
+```
+
 ### hello-world-api-post
 
 ```sh

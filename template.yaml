@@ -20,6 +20,18 @@ Resources:
           Properties:
             Path: /
             Method: get
+  HelloWorldApiGetQuery:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: hello-world-api-get-query/dist
+      Handler: hello-world-api-get-query
+      Runtime: go1.x
+      Events:
+        GetEvent:
+          Type: Api
+          Properties:
+            Path: /query
+            Method: get
   HelloWorldApiPost:
     Type: AWS::Serverless::Function
     Properties:
